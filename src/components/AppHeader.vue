@@ -19,29 +19,30 @@
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
   .header {
     display: flex;
     justify-content: space-between;
     padding: 24px;
-  }
-  .header__logo {
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 16px;
-    letter-spacing: 0.04em;
-  }
 
-  .header__user-info {
-    display: flex;
-    justify-content: space-between;
-    min-width: 186px;
-  }
+    &__logo {
+      font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 16px;
+      letter-spacing: 0.04em;
+    }
 
-  .header__icon {
-    display: block;
-    width: 24px;
-    height: 24px;
+    &__user-info {
+      display: flex;
+      justify-content: space-between;
+      min-width: 186px;
+    }
+
+    &__icon {
+      display: block;
+      width: 24px;
+      height: 24px;
+    }
   }
 </style>
