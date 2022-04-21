@@ -26,11 +26,11 @@
     padding: 24px;
 
     &__logo {
-      font-family: 'Open Sans', Arial, Helvetica, sans-serif;
       font-weight: 700;
       font-size: 22px;
       line-height: 16px;
       letter-spacing: 0.04em;
+      color: #000;
     }
 
     &__user-info {

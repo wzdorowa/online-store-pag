@@ -7,8 +7,8 @@
       <img
         v-if="image.id === currentSlideIndex"
         v-bind:src="image.src"
-        v-bind:alt="image.productName"
-        v-bind:aria-label="image.productName"
+        v-bind:alt="name"
+        v-bind:aria-label="name"
         class="slider__image">
     </div>
     <div class="slider__images-mini">
@@ -16,7 +16,7 @@
       v-for="image in images"
       v-bind:key="image.src"
       v-bind:src="image.src"
-      v-bind:alt="image.productName"
+      v-bind:alt="name"
       @click="setActiveSlide(image.id)">
     </div>
   </div>
@@ -26,7 +26,7 @@
 <script>
 
 export default {
-  props: ['images'],
+  props: ['images', 'name'],
   data() {
     return {
       currentSlideIndex: 0,

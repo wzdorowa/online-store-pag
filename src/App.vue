@@ -1,29 +1,37 @@
 <template>
   <AppHeader />
-  <AppSlider
-    v-bind:images="sliderImages"
+  <AppProduct
+    v-bind:product="product"
   />
 </template>
 
 <script>
 import AppHeader from '@/components/AppHeader.vue'
-import AppSlider from '@/components/AppSlider.vue'
+import AppProduct from '@/components/AppProduct.vue'
 
 export default {
   name: 'App',
   data() {
     return {
-      sliderImages: [
-        { id: 0, src: '/slider-images/product-view1.jpeg', productName: 'Пижама для девочек' },
-        { id: 1, src: '/slider-images/product-view2.jpeg', productName: 'Пижама для девочек' },
-        { id: 2, src: '/slider-images/product-view3.jpeg', productName: 'Пижама для девочек' },
-        { id: 3, src: '/slider-images/product-view4.jpeg', productName: 'Пижама для девочек' },
-        { id: 4, src: '/slider-images/product-view5.jpeg', productName: 'Пижама для девочек' },
-      ]
+      product: {
+        name: 'Пижама для девочек',
+        article: '02765/46',
+        images: [
+          { id: 0, src: '/slider-images/product-view1.jpeg' },
+          { id: 1, src: '/slider-images/product-view2.jpeg' },
+          { id: 2, src: '/slider-images/product-view3.jpeg' },
+          { id: 3, src: '/slider-images/product-view4.jpeg' },
+          { id: 4, src: '/slider-images/product-view5.jpeg' },
+        ],
+        reviews: {
+          rating: 4,
+          numberReviews: 14
+        }
+      }
     }
   },
   components: {
-    AppHeader, AppSlider
+    AppHeader, AppProduct
   }
 }
 </script>
@@ -35,10 +43,9 @@ export default {
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #000000;
+  color: #333333;
 }
 </style>
