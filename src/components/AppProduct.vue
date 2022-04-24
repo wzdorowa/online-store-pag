@@ -30,6 +30,7 @@
       <div class="product__counter">
         <AppCounter/>
       </div>
+      <AppButtonCart v-bind:value="'Добавить в корзину'"/>
     </div>
   </div>
 
@@ -41,11 +42,12 @@ import AppReviews from '@/components/AppReviews.vue'
 import AppPrice from '@/components/AppPrice.vue'
 import AppDropdown from '@/components/AppDropdown.vue'
 import AppCounter from '@/components/AppCounter.vue'
+import AppButtonCart from '@/components/AppButtonСart.vue'
 
 export default {
   props: ['product'],
   components: {
-    AppSlider, AppReviews, AppPrice, AppDropdown, AppCounter
+    AppSlider, AppReviews, AppPrice, AppDropdown, AppCounter, AppButtonCart,
   }
 }
 </script>
