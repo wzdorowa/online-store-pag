@@ -18,6 +18,12 @@
           v-bind:price="product.price"
         />
       </div>
+      <div class="product__dropdown">
+        <AppDropdown
+          v-bind:placeholder="'Выбрать размер'"
+          v-bind:dropdownValues="product.sizes"
+        />
+      </div>
     </div>
   </div>
 
@@ -27,11 +33,12 @@
 import AppSlider from '@/components/AppSlider.vue'
 import AppReviews from '@/components/AppReviews.vue'
 import AppPrice from '@/components/AppPrice.vue'
+import AppDropdown from '@/components/AppDropdown.vue'
 
 export default {
   props: ['product'],
   components: {
-    AppSlider, AppReviews, AppPrice
+    AppSlider, AppReviews, AppPrice, AppDropdown
   }
 }
 </script>
@@ -59,6 +66,9 @@ export default {
 
     &__reviews-text {
       margin-right: 13px;
+    }
+
+    &__dropdown {
     }
   }
 </style>

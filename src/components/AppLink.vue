@@ -16,5 +16,6 @@ export default {
       border-top: 1px solid #333333;
       border-right: 1px solid #333333;
       transform: rotate(45deg);
+      cursor: pointer;
     }
 </style>
