@@ -55,7 +55,8 @@ export default {
     }
 
     &__text {
-      margin-right: 8px;
+      margin-right: 5px;
+      letter-spacing: 0.5px;
     }
   }
 </style>

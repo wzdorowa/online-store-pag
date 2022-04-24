@@ -51,7 +51,8 @@ export default {
       font-family: inherit;
       font-size: 14px;
       line-height: 20px;
-      padding: 16px 20px;
+      letter-spacing: 0.5px;
+      padding: 11px 15px;
       border: 1px solid #333333;
       cursor: pointer;
 
@@ -66,7 +67,7 @@ export default {
       &::before {
         position: absolute;
         content: '';
-        right: 18px;
+        right: 15px;
         top: 0;
         width: 10.5px;
         height: 10.5px;

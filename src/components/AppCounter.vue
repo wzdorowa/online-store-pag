@@ -33,10 +33,11 @@ export default {
     &__minus,
     &__plus,
     &__value {
-      width: 44px;
+      width: 48px;
       height: 44px;
       border: none;
       font-family: inherit;
+      background-color: #F2F2F2;
     }
 
     &__minus,
@@ -48,7 +49,6 @@ export default {
       display: inline-block;
       text-align: center;
       line-height: 44px;
-      background-color: #F2F2F2;
     }
   }
 </style>

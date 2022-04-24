@@ -23,7 +23,7 @@
   .header {
     display: flex;
     justify-content: space-between;
-    padding: 24px;
+    padding: 22px 24px 30px 20px;
 
     &__logo {
       font-weight: 700;
@@ -36,13 +36,13 @@
     &__user-info {
       display: flex;
       justify-content: space-between;
-      min-width: 186px;
+      min-width: 160px;
     }
 
     &__icon {
       display: block;
-      width: 24px;
-      height: 24px;
+      width: 16px;
+      height: 16px;
     }
   }
 </style>
