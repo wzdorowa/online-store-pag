@@ -27,6 +27,9 @@
       <div class="product__size-grid">
         <a class="product__size-grid-link" href="/">Определить размер</a>
       </div>
+      <div class="product__counter">
+        <AppCounter/>
+      </div>
     </div>
   </div>
 
@@ -37,11 +40,12 @@ import AppSlider from '@/components/AppSlider.vue'
 import AppReviews from '@/components/AppReviews.vue'
 import AppPrice from '@/components/AppPrice.vue'
 import AppDropdown from '@/components/AppDropdown.vue'
+import AppCounter from '@/components/AppCounter.vue'
 
 export default {
   props: ['product'],
   components: {
-    AppSlider, AppReviews, AppPrice, AppDropdown
+    AppSlider, AppReviews, AppPrice, AppDropdown, AppCounter
   }
 }
 </script>
