@@ -3,16 +3,17 @@
   .reviews__rating
     AppRating(v-bind:ratingStar="reviews.rating")
   span.reviews__text {{reviews.numberReviews}} {{this.convertNumToWordform(reviews.numberReviews, wordForms)}}
-  a.reviews__link(href='/')
+  AppLink(v-bind:link="'/'")
 </template>
 
 <script>
 import AppRating from '@/components/AppRating.vue'
+import AppLink from '@/components/AppLink.vue'
 
 export default {
   props: ['reviews'],
   components: {
-    AppRating
+    AppRating, AppLink
   },
   data() {
     return {
@@ -55,15 +56,6 @@ export default {
 
     &__text {
       margin-right: 8px;
-    }
-
-    &__link {
-      display: block;
-      width: 10.5px;
-      height: 10.5px;
-      border-top: 1px solid #333333;
-      border-right: 1px solid #333333;
-      transform: rotate(45deg);
     }
   }
 </style>

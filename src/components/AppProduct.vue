@@ -13,6 +13,11 @@
             v-bind:reviews="product.reviews"
           />
       </div>
+      <div class="product__price">
+        <AppPrice
+          v-bind:price="product.price"
+        />
+      </div>
     </div>
   </div>
 
@@ -21,11 +26,12 @@
 <script>
 import AppSlider from '@/components/AppSlider.vue'
 import AppReviews from '@/components/AppReviews.vue'
+import AppPrice from '@/components/AppPrice.vue'
 
 export default {
   props: ['product'],
   components: {
-    AppSlider, AppReviews
+    AppSlider, AppReviews, AppPrice
   }
 }
 </script>

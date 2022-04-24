@@ -26,6 +26,11 @@ export default {
         reviews: {
           rating: 4,
           numberReviews: 14
+        },
+        price: {
+          base: 1500,
+          discountPrice: 800,
+          tags: ['скидка - 36%', 'акция - 20%']
         }
       }
     }
@@ -44,6 +49,7 @@ export default {
 
 #app {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 14px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #333333;
