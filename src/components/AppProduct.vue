@@ -30,7 +30,8 @@
       <div class="product__counter">
         <AppCounter/>
       </div>
-      <AppButtonCart v-bind:value="'Добавить в корзину'"/>
+      <AppButtonCart :value="'Добавить в корзину'"/>
+      <AppLikeButton :checked="false" :name="'like button'"/>
     </div>
   </div>
 
@@ -43,11 +44,18 @@ import AppPrice from '@/components/AppPrice.vue'
 import AppDropdown from '@/components/AppDropdown.vue'
 import AppCounter from '@/components/AppCounter.vue'
 import AppButtonCart from '@/components/AppButtonСart.vue'
+import AppLikeButton from '@/components/AppLikeButton.vue'
 
 export default {
   props: ['product'],
   components: {
-    AppSlider, AppReviews, AppPrice, AppDropdown, AppCounter, AppButtonCart,
+    AppSlider,
+    AppReviews,
+    AppPrice,
+    AppDropdown,
+    AppCounter,
+    AppButtonCart,
+    AppLikeButton,
   }
 }
 </script>
