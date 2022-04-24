@@ -35,6 +35,7 @@
       <div class="product__purchase">
         <a class="product__purchase-link" href="/">Купить в 1 клик</a>
       </div>
+      <hr class="product__separator">
     </div>
   </div>
 
@@ -100,6 +101,10 @@ export default {
       &:visited {
         color: #333333;
       }
+    }
+
+    &__separator {
+      border-top: 0.5px solid #C4C4C4;
     }
   }
 </style>
