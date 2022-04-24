@@ -24,6 +24,9 @@
           v-bind:dropdownValues="product.sizes"
         />
       </div>
+      <div class="product__size-grid">
+        <a class="product__size-grid-link" href="/">Определить размер</a>
+      </div>
     </div>
   </div>
 
@@ -69,6 +72,16 @@ export default {
     }
 
     &__dropdown {
+    }
+
+    &__size-grid {
+
+    }
+
+    &__size-grid-link {
+      &:visited {
+        color: #333333;
+      }
     }
   }
 </style>
