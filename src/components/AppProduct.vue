@@ -25,7 +25,7 @@
         />
       </div>
       <div class="product__size-grid">
-        <a class="product__size-grid-link" href="/">Определить размер</a>
+        <a class="product__link-content" href="/">Определить размер</a>
       </div>
       <div class="product__counter">
         <AppCounter/>
@@ -33,9 +33,21 @@
       <AppButtonCart :value="'Добавить в корзину'"/>
       <AppLikeButton :checked="false" :name="'like button'"/>
       <div class="product__purchase">
-        <a class="product__purchase-link" href="/">Купить в 1 клик</a>
+        <a class="product__link-content" href="/">Купить в 1 клик</a>
       </div>
       <hr class="product__separator">
+      <div class="product__link">
+        <img class="product__link-icon" src="@/components/icons/description.svg"/>
+        <a class="product__link-content" href="/">Описание товара</a>
+      </div>
+      <div class="product__link">
+        <img class="product__link-icon" src="@/components/icons/time.svg"/>
+        <a class="product__link-content" href="/">Доставка и возврат</a>
+      </div>
+      <div class="product__link">
+        <img class="product__link-icon" src="@/components/icons/cash-card.svg"/>
+        <a class="product__link-content" href="/">Способы оплаты</a>
+      </div>
     </div>
   </div>
 
@@ -96,8 +108,8 @@ export default {
 
     }
 
-    &__size-grid-link,
-    &__purchase-link {
+    &__link-content {
+      display: inline-block;
       &:visited {
         color: #333333;
       }
@@ -105,6 +117,15 @@ export default {
 
     &__separator {
       border-top: 0.5px solid #C4C4C4;
+    }
+
+    &__link {
+      display: flex;
+    }
+
+    &__link-icon {
+      display: block;
+      margin-right: 6.5px;
     }
   }
 </style>
