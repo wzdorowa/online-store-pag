@@ -4,13 +4,13 @@
     span.price__current-value(v-if="price.discountPrice !== undefined") {{formatCost(price.discountPrice)}} &#x20bd
     span.price__base.price__base_crossed-out(v-if="price.discountPrice !== undefined") {{formatCost(price.base)}} &#x20bd
     span.price__current-value(v-if="price.discountPrice === undefined") {{formatCost(price.base)}} &#x20bd
-    AppLink(v-bind:link="'/'")
+    AppArrowLink(v-bind:link="'/'")
   .price__tags(v-if="price.tags !== undefined")
     span.price__tag(v-for="tag in price.tags") {{tag}}
 </template>
 
 <script>
-import AppLink from '@/components/AppLink.vue'
+import AppArrowLink from '@/components/AppArrowLink.vue'
 
 export default {
   props: ['price'],
@@ -21,7 +21,7 @@ export default {
     }
   },
   components: {
-    AppLink
+    AppArrowLink
   }
 }
 </script>

@@ -1,5 +1,5 @@
 <template lang="pug">
-span.link(href=link)
+span.arrow-link(href=link)
 </template>
 
 <script>
@@ -9,7 +9,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .link {
+  .arrow-link {
       display: inline-block;
       width: 10.5px;
       height: 10.5px;
