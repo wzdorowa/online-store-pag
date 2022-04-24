@@ -32,6 +32,9 @@
       </div>
       <AppButtonCart :value="'Добавить в корзину'"/>
       <AppLikeButton :checked="false" :name="'like button'"/>
+      <div class="product__purchase">
+        <a class="product__purchase-link" href="/">Купить в 1 клик</a>
+      </div>
     </div>
   </div>
 
@@ -92,7 +95,8 @@ export default {
 
     }
 
-    &__size-grid-link {
+    &__size-grid-link,
+    &__purchase-link {
       &:visited {
         color: #333333;
       }
