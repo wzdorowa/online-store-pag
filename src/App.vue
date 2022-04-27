@@ -39,11 +39,11 @@ export default {
         sizes: ['80-86', '86-92', '92-98', '98-104', '104-110'],
       },
       gallery: [
-          { id: 1, src: '/gallery/style-1.jpg', name: 'style 1' },
-          { id: 2, src: '/gallery/style-2.jpg', name: 'style 1' },
-          { id: 3, src: '/gallery/style-3.jpg', name: 'style 1' },
-          { id: 4, src: '/gallery/style-4.jpg', name: 'style 1' },
-          { id: 5, src: '/gallery/style-5.jpg', name: 'style 1' },
+          { id: 1, src: '/gallery/style-1.jpg', name: 'style 1', numberFavorite: 350, href: '/' },
+          { id: 2, src: '/gallery/style-2.jpg', name: 'style 1', numberFavorite: 32, href: '/' },
+          { id: 3, src: '/gallery/style-3.jpg', name: 'style 1', numberFavorite: 146, href: '/' },
+          { id: 4, src: '/gallery/style-4.jpg', name: 'style 1', numberFavorite: 200, href: '/' },
+          { id: 5, src: '/gallery/style-5.jpg', name: 'style 1', numberFavorite: 279, href: '/' },
         ],
     }
   },
