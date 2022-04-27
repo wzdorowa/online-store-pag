@@ -1,13 +1,17 @@
-<template>
-  <AppHeader />
-  <AppProduct
-    v-bind:product="product"
-  />
+<template lang="pug">
+.content
+  AppHeader
+  .content__main
+    .content__product
+      AppProduct(v-bind:product="product")
+    .content__gallery
+      AppGallery(:images="gallery")
 </template>
 
 <script>
 import AppHeader from '@/components/AppHeader.vue'
 import AppProduct from '@/components/AppProduct.vue'
+import AppGallery from '@/components/AppGallery.vue'
 
 export default {
   name: 'App',
@@ -32,17 +36,24 @@ export default {
           discountPrice: 800,
           tags: ['скидка - 36%', 'акция - 20%']
         },
-        sizes: ['80-86', '86-92', '92-98', '98-104', '104-110']
-      }
+        sizes: ['80-86', '86-92', '92-98', '98-104', '104-110'],
+      },
+      gallery: [
+          { id: 1, src: '/gallery/style-1.jpg', name: 'style 1' },
+          { id: 2, src: '/gallery/style-2.jpg', name: 'style 1' },
+          { id: 3, src: '/gallery/style-3.jpg', name: 'style 1' },
+          { id: 4, src: '/gallery/style-4.jpg', name: 'style 1' },
+          { id: 5, src: '/gallery/style-5.jpg', name: 'style 1' },
+        ],
     }
   },
   components: {
-    AppHeader, AppProduct
+    AppHeader, AppProduct, AppGallery
   }
 }
 </script>
 
-<style>
+<style lang="scss">
 * {
   margin: 0;
   box-sizing: border-box;
@@ -54,5 +65,11 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #333333;
+}
+
+.content {
+  &__gallery {
+    margin-top: 40px;
+  }
 }
 </style>
